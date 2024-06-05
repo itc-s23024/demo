@@ -18,14 +18,14 @@ repositories {
 	mavenCentral()
 }
 
-val exposedVersion: String by project
+val exposedVersion: String by project  //おまけ
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:$exposedVersion")
+	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:$exposedVersion")   //おまけ
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")   //おまけ
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
